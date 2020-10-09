@@ -1,4 +1,4 @@
-<form class="flex-1 max-w-lg my-3 mx-auto" method="POST" action="{{ route('media.store') }}">
+<form class="flex-1 max-w-lg my-3 mx-auto" method="POST" enctype="multipart/form-data" action="{{ route('media.store') }}">
 @csrf
 
     <div class="flex flex-wrap mb-6">
