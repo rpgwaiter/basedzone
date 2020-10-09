@@ -36,7 +36,7 @@
                 </div>
             @endif
 
-            @include('includes.welcome-banner')
+            <livewire:welcome-banner />
 
 
                 <div class="flex justify-center mt-6 sm:items-center sm:justify-between">
