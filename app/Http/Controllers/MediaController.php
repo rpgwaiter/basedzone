@@ -35,7 +35,7 @@ class MediaController extends Controller
         $media->year = $request['year'];
         $media->media_type = $request['media_type'];
         $media->imdb_id = $request['imdb_id'];
-        $media->cover_art = $request->cover_art;
+        $media->cover_art = $request['cover_art'];
         $media->save();
 
     }
