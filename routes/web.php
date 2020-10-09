@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 $proxy_url    = env('PROXY_URL');
-$proxy_schema = env('PROXY_SCHEMA');
+$proxy_scheme = env('PROXY_SCHEME');
 
 if (!empty($proxy_url)) {
     URL::forceRootUrl($proxy_url);
 }
 
 if (!empty($proxy_schema)) {
-    URL::forceSchema($proxy_schema);
+    URL::forceScheme($proxy_scheme);
 }
 
 Route::get('/', function () {
