@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased bg-teal-500">
-        <div class="pb-5 items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="pb-5 items-top justify-center min-h-screen bg-gray-800 dark:bg-gray-900 sm:items-center sm:pt-0">
             @if (Route::has('login'))
                 <div class="bg-teal-400 top-0 right-0 px-6 pt-4 pb-8 sm:block">
                     @auth

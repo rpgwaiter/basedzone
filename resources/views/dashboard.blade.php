@@ -14,13 +14,7 @@
                 <a href="{{route('media.create') }}" class="justify-center mx-auto my-1 bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded">Add your own!</a>
             </div>
             <div class="flex border-solid border-4 border-pink-600">
-                @foreach($movies as $movie)
-                    <div class="mx-auto w-1/5 container items-center text-center">
-                        <img class="mx-auto" src="{{$movie['cover_art']}}" \>
-                        <p class="font-semibold">{{sprintf("%s (%d)", $movie['name'], $movie['year'])}}</p>
-                        <p>Added: {{$movie['created_at']}}</p>
-                    </div>
-                @endforeach
+                <livewire:dash.latest-movies :movies="$movies" />
             </div>
         </div>
     </div>

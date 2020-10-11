@@ -20,7 +20,7 @@ class CreateMediaTable extends Migration
             $table->integer('releases')->nullable();
             $table->enum('media_type', ['anime_movie', 'anime_ova', 'anime_series', 'movie', 'tv_series'])->default('movie');
             $table->string('imdb_id')->nullable();
-            $table->text('cover_art')->nullable();
+            $table->text('cover_art')->default('public/nocover.png');
             $table->timestamps();
         });
     }

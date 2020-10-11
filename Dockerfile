@@ -31,6 +31,4 @@ RUN mkdir -p /home/$user/.composer && \
 # Set working directory
 WORKDIR /var/www
 
-#RUN php artisan migrate
-
 USER $user
