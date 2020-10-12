@@ -27,11 +27,11 @@ class AppServiceProvider extends ServiceProvider
         $proxy_scheme = env('PROXY_SCHEME');
 
         if (!empty($proxy_url)) {
-            URL::forceRootUrl($proxy_url);
+            \URL::forceRootUrl($proxy_url);
         }
 
         if (!empty($proxy_scheme)) {
-            URL::forceScheme($proxy_scheme);
+            \URL::forceScheme($proxy_scheme);
         }
     }
 }
