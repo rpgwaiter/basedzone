@@ -12,16 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-$proxy_url    = env('PROXY_URL');
-$proxy_scheme = env('PROXY_SCHEME');
 
-if (!empty($proxy_url)) {
-    URL::forceRootUrl($proxy_url);
-}
-
-if (!empty($proxy_scheme)) {
-    URL::forceScheme($proxy_scheme);
-}
 
 Route::get('/', function () {
     return view('welcome');
