@@ -22,7 +22,8 @@ class CreateMediaTable extends Migration
                 'PG',
                 'PG-13',
                 'R',
-                'NC-17'
+                'NC-17',
+                'Not Rated'
             ]);
             $table->string('released');
             $table->string('runtime');
