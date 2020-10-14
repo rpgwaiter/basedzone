@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62643ac92105d827153f24bed2e81ae7",
+    "content-hash": "cc8f4f9b55b183cffd8ed64599470a91",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1050,48 +1050,6 @@
                 }
             ],
             "time": "2020-06-13T08:05:20+00:00"
-        },
-        {
-            "name": "kdion4891/laravel-livewire-forms",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kdion4891/laravel-livewire-forms.git",
-                "reference": "1dd0b4dd11a17abfeee8c921bd9f08ffe90c95b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kdion4891/laravel-livewire-forms/zipball/1dd0b4dd11a17abfeee8c921bd9f08ffe90c95b0",
-                "reference": "1dd0b4dd11a17abfeee8c921bd9f08ffe90c95b0",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Kdion4891\\LaravelLivewireForms\\Providers\\FormServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Kdion4891\\LaravelLivewireForms\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Dion",
-                    "email": "kdion4891@icloud.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A dynamic, responsive Laravel Livewire form component with realtime validation, file uploads, array fields, and more.",
-            "homepage": "https://github.com/kdion4891/laravel-livewire-forms",
-            "time": "2020-03-04T15:43:24+00:00"
         },
         {
             "name": "laravel/fortify",

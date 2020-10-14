@@ -10,20 +10,17 @@ class Media extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'year',
-        'releases',
-        'media_type',
-        'imdb_id',
-        'cover_art'
-    ];
-    protected $casts = [
-        'cover_art' => 'array'
+        'title', 'year', 'rated', 'released', 'runtime', 'genre', 'director', 'writer', 'actors',
+        'plot', 'language', 'country', 'awards', 'poster', 'metascore', 'imdb_rating', 'imdb_votes',
+        'imdb_id', 'media_type', 'production', 'physical_releases', 'created_by',
     ];
 
     // Name (Year)
     public function getDisplayNameAttribute()
     {
-        return "{$this->name} ({$this->year})";
+        return "{$this->title} ({$this->year})";
+    }
+    public function physicalReleases() {
+        return $this->hasMany('App\Models\PhysicalRelease');
     }
 }

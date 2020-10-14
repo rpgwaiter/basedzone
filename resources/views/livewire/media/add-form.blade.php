@@ -2,27 +2,23 @@
 @csrf
 
     <div class="flex flex-wrap mb-6">
-        <div class="w-full md:w-2/3 px-3 mb-6 md:mb-0">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <x-jet-label for="name" value="{{ __('Name') }}" />
             <x-jet-input wire:model="name" id="name" type="text" name="name" placeholder="WarGames" required autofocus />
         </div>
 
         <div class="w-full md:w-1/3 px-3">
-            <div class="w-full px-3">
-                <x-jet-label for="imdb_id" value="{{ __('imdb id') }}" />
-                <x-jet-input wire:model="imdb_id" id="imdb_id" type="text" name="imdb_id" placeholder="tt0086567" />
-                <p class="text-gray-800 text-xs italic">You can get this from the media's imdb url.</p>
-            </div>
+            <livewire:media.omdb-lookup />
         </div>
     </div>
 
     <div class="flex flex-wrap mb-2">
-        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <x-jet-label for="year" value="{{ __('Year') }}" />
             <x-jet-input wire:model="year" id="year" type="number" name="year" placeholder="1983" required />
         </div>
 
-        <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <x-jet-label for="media_type" value="{{ __('Media Type') }}" />
             <div class="relative">
                 <select wire:model="media_type" name="media_type" class="shadow-lg block appearance-none w-full bg-gray-800 border border-gray-200 text-gray-300 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-gray-500">
