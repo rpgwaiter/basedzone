@@ -15,7 +15,7 @@
             </div>
 
             <div class="flex border-solid border-4 border-pink-600">
-                <livewire:dash.latest-movies :movies="$movies" />
+                <livewire:dash.latest-movies />
             </div>
         </div>
     </div>

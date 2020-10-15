@@ -23,12 +23,10 @@ Route::middleware(['auth:sanctum', 'verified'])
     ->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])
-    ->get('/media/create', [\App\Http\Controllers\MediaController::class, 'create'])
-    ->name('media.create');
+    ->get('/media/{id}', function($id){
+            return view('media.display')->with('id', $id);
+        })->name('media.display');
 
-Route::middleware(['auth:sanctum', 'verified'])
-    ->post('/media/store', [\App\Http\Controllers\MediaController::class, 'store'])
-    ->name('media.store');
 
 Route::get('/help', function(){
     return App\Models\Media::all();
