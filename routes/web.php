@@ -23,10 +23,19 @@ Route::middleware(['auth:sanctum', 'verified'])
     ->name('dashboard');
 
 Route::middleware(['auth:sanctum', 'verified'])
-    ->get('/media/{id}', function($id){
+    ->get('/media/display/{id}', function($id){
             return view('media.display')->with('id', $id);
         })->name('media.display');
 
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/release/display/{id}', function($id){
+        return view('physical_release.display')->with('id', $id);
+    })->name('physical_release.display');
+
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/release/create/{id?}', function($id = null){
+        return view('physical_release.create')->with('id', $id);
+    })->name('physical_release.create');
 
 Route::get('/help', function(){
     return App\Models\Media::all();

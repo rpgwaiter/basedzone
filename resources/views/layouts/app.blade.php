@@ -24,7 +24,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-800">
-            @livewire('navigation-dropdown')
+            <livewire:navigation-dropdown />
 
             <!-- Page Heading -->
             <header class="bg-black shadow">
