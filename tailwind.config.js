@@ -8,10 +8,9 @@ module.exports = {
     ],
 
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
-            },
+        fontFamily: {
+            display: ['Ubuntu'],
+            body: ['Ubuntu']
         },
     },
 

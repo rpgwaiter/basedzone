@@ -33,8 +33,8 @@ Route::middleware(['auth:sanctum', 'verified'])
     })->name('physical_release.display');
 
 Route::middleware(['auth:sanctum', 'verified'])
-    ->get('/release/create/{id?}', function($id = null){
-        return view('physical_release.create')->with('id', $id);
+    ->get('/release/create/{mediaID?}', function($mediaID = null){
+        return view('physical_release.create')->with('mediaID', $mediaID);
     })->name('physical_release.create');
 
 Route::get('/help', function(){
