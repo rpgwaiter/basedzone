@@ -33,6 +33,18 @@
                 </div>
             </div>
         </div>
+
+        <input wire:model="player" name="player" class="w-full ml-3 mr-3 mt-4">
+        <datalist id="player">
+            @if(isset($equipment))
+                @foreach($equipment as $player)
+                    <option value="{{$player}}">
+                @endforeach
+            @endif
+        </datalist>
+        </input>
+
+
         <div class="border-b-2 w-full mb-2 mt-4 px-3 justify-evenly">
             <p class="text-xl text-center">Upload scans, photos of the covers, discs, etc.</p>
         </div>
