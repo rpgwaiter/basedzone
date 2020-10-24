@@ -17,7 +17,7 @@ class CreatePhysicalReleasesTable extends Migration
         Schema::create('physical_releases', function (Blueprint $table) {
             $table->id();
             $table->string('imdb_id');
-            $table->string('title');
+            $table->string('release_title');
             $table->enum('video_type', [
                 'NTSC', 'PAL', 'Hi-Vision', 'Discovision', 'LD-ROM', 'LD-ROM2',
                 'HDVS', 'PAL+', '720p', '1080i', '1080p', 'MEGA-LD'

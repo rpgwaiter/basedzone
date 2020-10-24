@@ -23,4 +23,5 @@ class Media extends Model
     public function physicalReleases() {
         return $this->hasMany('App\Models\PhysicalRelease');
     }
+
 }
