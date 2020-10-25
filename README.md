@@ -1,4 +1,5 @@
 # BasedZone
+
 Source code for https://based.zone, the media collection site. 
 
 ## Table of Contents
@@ -8,7 +9,8 @@ Source code for https://based.zone, the media collection site.
 - [Contributing](#contributing)
 
 ## Installation & Usage
-Coming Soon.
+
+Run with docker-compose.
 
 ## Support
 
